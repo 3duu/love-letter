@@ -290,7 +290,7 @@ no.addEventListener("mouseenter", (event) => {
   fugir();
 });
 
-document.addEventListener("touchmove", function(e){
+/*document.addEventListener("touchmove", function(e){
 
     if(no.style.display === "none") return;
 
@@ -311,19 +311,9 @@ document.addEventListener("touchmove", function(e){
         moverBotao();
     }
 
-}, {passive:true});
+}, {passive:true});*/
 
-// Caso ainda consiga clicar
-no.addEventListener("click", function(e){
-    e.preventDefault();
-    fugir(e);
-});
 
-no.onclick=()=>{
-
-fugir();
-
-}
 
 yes.onclick=()=>{
 

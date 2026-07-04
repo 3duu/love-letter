@@ -109,9 +109,8 @@ button{
 }
 
 #no{
-    position:fixed;
-    left:60%;
-    top:60%;
+    background:white;
+    color:#333;
 }
 
 .hidden{
@@ -249,20 +248,21 @@ Eu te amo ❤️
 
 <script>
 
-    window.addEventListener("load", () => {
-
-        const rect = no.getBoundingClientRect();
-
-        no.style.left = rect.left + "px";
-        no.style.top = rect.top + "px";
-
-    });
-
 const no=document.getElementById("no");
 const yes=document.getElementById("yes");
 
+window.addEventListener("load", () => {
+
+    const rect = no.getBoundingClientRect();
+
+    no.style.left = rect.left + "px";
+    no.style.top = rect.top + "px";
+
+});
+
 let tentativas = 0;
 let fugindo = false;
+
 
 function fugir() {
 

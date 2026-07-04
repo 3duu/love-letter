@@ -109,8 +109,9 @@ button{
 }
 
 #no{
-    background:white;
-    color:#333;
+    position:fixed;
+    left:60%;
+    top:60%;
 }
 
 .hidden{
@@ -247,6 +248,15 @@ Eu te amo ❤️
 </audio>
 
 <script>
+
+    window.addEventListener("load", () => {
+
+        const rect = no.getBoundingClientRect();
+
+        no.style.left = rect.left + "px";
+        no.style.top = rect.top + "px";
+
+    });
 
 const no=document.getElementById("no");
 const yes=document.getElementById("yes");
